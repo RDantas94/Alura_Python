@@ -33,11 +33,11 @@ pyautogui.write("senha123")
 pyautogui.press("tab")
 pyautogui.press("enter")
 
-# time.sleep(2)
+time.sleep(2)
 
 # Passo 3: Importar a base de dados
 tabela = pd.read_csv(
-    "C:\\Users\\Master\\Desktop\\Python\\Hashtag\\produtos.csv")
+    "C:\\Users\\Master\\Documents\\GitHub\\Alura_Python\\Hashtag\\Aula01\\produtos.csv")
 print(tabela)
 
 # Passo 4: Cadastrar 1 produto
@@ -45,7 +45,7 @@ print(tabela)
 linha = 0
 for linha in tabela.index:
     # clicar no campo de código
-    pyautogui.click(x=766, y=280)
+    pyautogui.click(x=751, y=271)
     # pegar da tabela o valor do campo que a gente quer preencher
     codigo = tabela.loc[linha, "codigo"]
     # preencher o campo
